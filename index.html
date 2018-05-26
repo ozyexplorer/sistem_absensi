@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Studen Acces Online</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+
+  <!-- Morris chart -->
+  <style>
+      #gambar{
+    border-radius:100em;
+
+    border:3px solid #ddd;
+    width:100px;
+    height:100px;
+    }
+
+    .kiri{
+      font-weight: bold;
+    }
+
+    .kanan{
+      text-align: right;
+      float: right;
+      }
+      ul{
+        display: block;
+        list-style-type: disc;
+      }
+
+    .box1{
+      overflow: auto;
+    }
+
+    @media only screen and (min-width:1024px) {
+        .prod-info-main div[class*=col-md-4] {
+            padding-right: 0
+        }
+        .prod-info-main div[class*=col-md-8] {
+            padding: 0 13px 0 0
+        }
+        .prod-wrap div[class*=col-md-5] {
+            padding-right: 0
+        }
+        .prod-wrap div[class*=col-md-7] {
+            padding: 0 13px 0 0
+        }
+        .prod-info-main .product-image {
+            border-right: 1px solid #dfe5e9
+        }
+        .prod-info-main .product-info {
+            position: relative
+        }
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+
+  <!-- Logo -->
+  <a href="#" class="logo" >
+    <span class="logo-lg" >Siswa</span>
+  </a>
+
+  <nav class="navbar navbar-static-top">
+    <!-- Sidebar toggle button-->
+    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+      <span class="sr-only">Toggle navigation</span>
+    </a>
+
+    <div class="navbar-custom-menu">
+      <ul class="nav navbar-nav">
+        <!-- Messages: style can be found in dropdown.less-->
+        <li class="dropdown messages-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-envelope-o"></i>
+            <span class="label label-success">4</span>
+          </a>
+
+        <li class="dropdown user user-menu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+            <span class="hidden-xs">Alexander Pierce</span>
+          </a>
+          <ul class="dropdown-menu">
+            <!-- User image -->
+            <li class="user-header">
+              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+              <p>
+                Alexander Pierce - Web Developer
+                <small>Member since Nov. 2012</small>
+              </p>
+            </li>
+            <!-- Menu Body -->
+            <li class="user-body">
+              <div class="row">
+                <div class="col-xs-4 text-center">
+                  <a href="#">Followers</a>
+                </div>
+                <div class="col-xs-4 text-center">
+                  <a href="#">Sales</a>
+                </div>
+                <div class="col-xs-4 text-center">
+                  <a href="#">Friends</a>
+                </div>
+              </div>
+              <!-- /.row -->
+            </li>
+            <!-- Menu Footer-->
+            <li class="user-footer">
+              <div class="pull-left">
+                <a href="#" class="btn btn-default btn-flat">Profile</a>
+              </div>
+              <div class="pull-right">
+                <a href="#" class="btn btn-default btn-flat">Log out</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!-- Control Sidebar Toggle Button -->
+
+      </ul>
+    </div>
+  </nav>
+
+  </header>
+
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar" style="background-color:#f9fafc">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <ul class="sidebar-menu"  data-widget="tree" style="background-color:#f9fafc">
+        <li><a href="#" style="color:black"><i class="fa fa-dashboard"></i><span >Beranda</span></a></li>
+        <li ><a href="#" style="color:black"><i class="fa fa-child"></i><span style="color:black">Data Skill</span></a></li>
+    </ul>
+
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header" style="margin-left:20px;" >
+      <h1>
+        Data Skill
+      </h1>
+      <br>
+    </section>
+
+    <!-- Main content -->
+      <section class="content container-fluid">
+        <div class="prod-info-main prod-wrap clearfix">
+
+        <div class="box box-info col-md-4 col-sm-4 col-xs-12" style="width:335px; height:420px; margin-left:20px; margin-right:55px;
+        padding-top: 10px;padding-right:10px;padding-bottom: 10px;padding-left: 10px;">
+          <center>
+            <img id="gambar" src="doraemon.jpg" alt="" style="">
+            <h4 style="font-family: “Duru Sans”, Verdana, sans-serif;">Fata Hasan</h4>
+            <h5 style="font-weight:normal; font-family: Courier, monospace;">XI IPA</h5>
+          </center>
+            <ul class="list-group list-group-unbordered">
+              <li class="list-group-item"><b>Jenis Kelamin</b>
+                  <a href="#" style="float:right">Laki-Laki</a>
+              </li>
+              <li class="list-group-item"><b>Agama</b>
+                  <a href="#" style="float:right">Islam</a>
+              </li>
+              <li class="list-group-item"><b>Tempat & Tanggal Lahir</b>
+                  <a href="#" style="float:right">Bandung, 20 Maret 1997</a>
+              </li>
+              <li class="list-group-item"><b>Alamat</b>
+                  <a href="#" style="float:right">Bandung</a>
+              </li>
+              <li class="list-group-item"><b>No. Telp</b>
+                  <a href="#" style="float:right">087822555784</a>
+              </li>
+              <li class="list-group-item"><b>Nama Ayah</b>
+                  <a href="#" style="float:right">Ehram</a>
+              </li>
+            </ul>
+
+        </div>
+
+      <div class="box box-info col-md-8 col-sm-8 col-xs-12" style=" display: block; width:550px; height:420px; padding-top: 0px;padding-right:
+       50px;padding-bottom: 30px;padding-left: 5px; position: overflow: hidden;relative;  ">
+        <center><h3 style="margin-left:60px;">Skill Karakter</h3>
+        <canvas id="marksChart" height="8" width="10"></canvas>
+
+      </div>
+    </div>
+    <!-- /.content -->
+    </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <strong>Student Acces Online &copy; 2018
+  </footer>
+
+
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<script src="chartjs/Chart.bundle.js"></script>
+<script type="text/javascript">
+    var marksCanvas = document.getElementById("marksChart");
+
+    Chart.defaults.global.defaultFontFamily = "Lato";
+    Chart.defaults.global.defaultFontSize = 18;
+
+    var marksData = {
+    labels: ["Intelegence", "Constituion", "Strength", "Charisma", "Dexterity", "Wisdom"],
+    datasets: [{
+    label: "Fata Hasan",
+    backgroundColor: "transparent",
+    borderColor: "rgba(200,0,0,0.6)",
+    fill: false,
+    radius: 1,
+    pointRadius: 1,
+    pointBorderWidth: 1,
+    pointBackgroundColor: "orange",
+    pointBorderColor: "rgba(200,0,0,0.6)",
+    pointHoverRadius: 1,
+    data: [5, 4, 4, 3, 5, 2]
+    }]
+    };
+
+    var chartOptions = {
+    scale: {
+    ticks: {
+      beginAtZero: true,
+      min: 0,
+      max: 5,
+      stepSize: 1
+    },
+    pointLabels: {
+      fontSize: 12
+    }
+    },
+    legend: {
+    position: 'left'
+    }
+    };
+
+    var radarChart = new Chart(marksCanvas, {
+    type: 'radar',
+    data: marksData,
+    options: chartOptions
+    });
+</script>
+
+
+</body>
+</html>
